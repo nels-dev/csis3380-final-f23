@@ -13,10 +13,9 @@ const BookCard = ({book, deleteBook}) => {
                     <div className="desc">
                         <h2>{book.title}</h2>
                         <h3>{book.author}</h3>
-                        <p>{book.description} 
+                        <p>{book.description} <br/>
                        
-                        </p>
-                        <p>Pages: {book.pages}
+                        Pages: {book.pages}
                         <button
                             className="float-right"
                             onClick={()=>deleteBook(book._id)}
